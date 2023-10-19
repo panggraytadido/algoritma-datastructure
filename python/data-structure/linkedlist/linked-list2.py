@@ -33,9 +33,9 @@ if __name__=='__main__':
 
 	llist.head = Node(1)
 	second = Node(2)
-	third = Node(3)
+	third = Node(4)
 
 	llist.head.next = second; # Link first node with second
-	second.next = third; # Link second node with the third node
+	# second.next = third; # Link second node with the third node
 
 	llist.printList()

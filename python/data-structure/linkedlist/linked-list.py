@@ -16,7 +16,6 @@ class LinkedList:
     def __init__(self):
         self.head = None
  
- 
 # Code execution starts here
 if __name__=='__main__':
  
@@ -67,3 +66,5 @@ if __name__=='__main__':
     | 1  |  o-------->| 2  |  o-------->|  3 | null |
     +----+------+     +----+------+     +----+------+
     '''
+
+    print(llist)

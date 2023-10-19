@@ -85,6 +85,13 @@ class LinkedList:
 			print(temp.data,end=" ")
 			temp = temp.next
 
+	# Given a reference to the head of a list and a key,
+    # delete the first occurrence of key in linked list
+	def deleteNode(self, key):
+		
+        # Store head node
+    	temp = self.head
+
 
 
 # Code execution starts here
@@ -105,10 +112,13 @@ if __name__=='__main__':
 	# Insert 4 at the end. So linked list becomes 1->7->6->4->None
 	llist.append(4)
 
+	llist.append(10)
+
 	# Insert 8, after 7. So linked list becomes 1 -> 7-> 8-> 6-> 4-> None
 	llist.insertAfter(llist.head.next, 8)
 
-	print('Created linked list is: ')
+	# print('Created linked list is: ')
 	llist.printList()
+	print("")
 
 # This code is contributed by Manikantan Narasimhan
