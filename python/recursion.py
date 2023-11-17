@@ -23,7 +23,7 @@ def fib(n):
 # Driver Code
 
 # Initialize variable n.
-n = 5;
+n = 5
 print("Fibonacci series of 5 numbers is :",end=" ")
 
 # for loop to print the fibonacci series.

@@ -39,7 +39,7 @@
 
 # code
 import sys
-print ("GFG")
+# print ("GFG")
 # O(n * k) solution for finding
 # maximum sum of a subarray of size k
 INT_MIN = -sys.maxsize - 1

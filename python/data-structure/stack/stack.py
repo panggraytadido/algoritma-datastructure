@@ -32,4 +32,7 @@ class Stack(list):
         print(stack.peek())
 
 if __name__ == '__main__':
-    print(Stack())
+    s = Stack()
+    s.push('1')
+    s.push('2')
+    print(s.pop())
