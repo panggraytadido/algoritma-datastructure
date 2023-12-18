@@ -1,7 +1,7 @@
 // "static void main" must be defined in a public class.
 import java.util.Arrays;
 
-public class Main {
+public class BubbleSort {
     public static void main(String[] args) {
         int arr[] = { 9,8,4,5,6,6 };
         int i, x,count,j,t; 

@@ -45,24 +45,48 @@ def par_checker(symbol_string):
                 balanced = False
             else:
                 s.pop()
-
         index = index + 1
-
+    
+    if balanced and s.is_empty():
+        return True
+    else:
+        return False
+    
+def par_checker_multiple(symbol_string):
+    s = Stack()
+    balanced = True
+    index = 0
+    while index < len(symbol_string) and balanced:
+        symbol = symbol_string[index]
+        if symbol in "([{":
+            s.push(symbol)
+        else:
+            if s.is_empty():
+                balanced = False
+            else:
+                top = s.pop()
+                if not matches(top, symbol):
+                    balanced = False
+        index = index + 1
     if balanced and s.is_empty():
         return True
     else:
         return False
 
+def matches(open, close):
+    opens = "([{"
+    closes = ")]}"
+    return opens.index(open) == closes.index(close)
 
-stack = Stack()
-stack.push(1)
-stack.push(2)
-stack.push(3)
+# stack = Stack()
+# stack.push(1)
+# stack.push(2)
+# stack.push(3)
 # print(stack.size())
 # print(stack.peek())
 # print(stack.pop())
 # print(stack.peek())
-print(stack.size())
+# print(stack.size())
 
 # print(par_checker('((()))'))
-# print(par_checker('(()'))
+print(par_checker('((]'))

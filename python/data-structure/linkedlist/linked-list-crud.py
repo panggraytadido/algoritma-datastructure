@@ -88,9 +88,9 @@ class LinkedList:
 	# Given a reference to the head of a list and a key,
     # delete the first occurrence of key in linked list
 	def deleteNode(self, key):
-		
-        # Store head node
-    	temp = self.head
+			# Store head node
+		temp = self.head
+		return temp
 
 
 
@@ -101,21 +101,21 @@ if __name__=='__main__':
 	llist = LinkedList()
 
 	# Insert 6. So linked list becomes 6->None
-	llist.append(6)
+	llist.append(1)
 
 	# Insert 7 at the beginning. So linked list becomes 7->6->None
-	llist.push(7);
+	llist.push(2)
 
 	# Insert 1 at the beginning. So linked list becomes 1->7->6->None
-	llist.push(1);
+	llist.push(3)
 
 	# Insert 4 at the end. So linked list becomes 1->7->6->4->None
 	llist.append(4)
 
-	llist.append(10)
+	llist.append(5)
 
 	# Insert 8, after 7. So linked list becomes 1 -> 7-> 8-> 6-> 4-> None
-	llist.insertAfter(llist.head.next, 8)
+	llist.insertAfter(llist.head.next, 5)
 
 	# print('Created linked list is: ')
 	llist.printList()
